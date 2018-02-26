@@ -13,8 +13,8 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/27091513554_2e6acdd6d7_b.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', '27091513554_2e6acdd6d7_b.jpg'));
+app.get('/ui/hacker_cyber_crime-512.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hacker_cyber_crime-512.png'));
 });
 
 
