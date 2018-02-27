@@ -5,19 +5,38 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone = {
-    title: 'Article one | Mohamed Jabin' ,
-    heading: 'ARTICLE ON HEALTH AND FITNESS' ,
-    date: 'Feb 25,2018' ,
-    content:
-            `<p>
-                        Being healthy and fit in simple terms means taking good care of the body. We should remember that a healthy mind resides only in a healthy body. Good health of both mind and body helps one maintain the required energy level to achieve success in life. All of us must strive to achieve wholesome health.
-            </p>
-             <p>
-                        Protecting your body from the intake of harmful substances, doing regular exercises, having proper food and sleep are some of the important instances that define a healthy lifestyle. Being fit allows us to perform our activities without being lethargic, restless or tired.
-             </p>`
-    
-};
+var Articles = {
+    Articleone = {
+        title: 'Article one | Mohamed Jabin' ,
+        heading: 'ARTICLE ON HEALTH AND FITNESS' ,
+        date: 'Feb 25,2018' ,
+        content:
+                `<p>
+                            Being healthy and fit in simple terms means taking good care of the body. We should remember that a healthy mind resides only in a healthy body. Good health of both mind and body helps one maintain the required energy level to achieve success in life. All of us must strive to achieve wholesome health.
+                </p>
+                 <p>
+                            Protecting your body from the intake of harmful substances, doing regular exercises, having proper food and sleep are some of the important instances that define a healthy lifestyle. Being fit allows us to perform our activities without being lethargic, restless or tired.
+                 </p>`
+        
+    } ,
+    Articletwo = { title: 'Article two | Mohamed Jabin' ,
+        heading: 'ARTICLE ON HEALTH AND FITNESS' ,
+        date: 'Feb 25,2018' ,
+        content:
+                `<p>
+                            A healthy and fit person is capable of living the life to the fullest, without any major medical or physical issues. Being healthy is not only related to the physical well-being of a person, it also involves the mental stability or the internal peace of a person.
+                </p>
+               `
+        } ,
+    Articlethree = { title: 'Article three | Mohamed Jabin' ,
+        heading: 'ARTICLE ON HEALTH AND FITNESS' ,
+        date: 'Feb 25,2018' ,
+        content:
+                `<p>
+                             Generally, a healthy diet consists of taking a proper and healthy food which includes eating green and fresh vegetables, fruits, having milk, eggs, minerals, proteins and vitamins essential for a human’s lifestyle. Practicing Yoga including regular exercises in your daily routine also help you maintain your desired fitness, blood sugar and immunity level.
+                </p>
+                `
+        }
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
