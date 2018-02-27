@@ -92,8 +92,8 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/ui/hacker_cyber_crime-512.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'hacker_cyber_crime-512.png'));
 });
 
 
