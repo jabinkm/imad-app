@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var Articles = {
-    Articleone = {
+    Articleone: {
         title: 'Article one | Mohamed Jabin' ,
         heading: 'ARTICLE ON HEALTH AND FITNESS' ,
         date: 'Feb 25,2018' ,
@@ -19,7 +19,7 @@ var Articles = {
                  </p>`
         
     } ,
-    Articletwo = { title: 'Article two | Mohamed Jabin' ,
+    Articletwo: { title: 'Article two | Mohamed Jabin' ,
         heading: 'ARTICLE ON HEALTH AND FITNESS' ,
         date: 'Feb 25,2018' ,
         content:
@@ -28,15 +28,16 @@ var Articles = {
                 </p>
                `
         } ,
-    Articlethree = { title: 'Article three | Mohamed Jabin' ,
+    Articlethree: { title: 'Article three | Mohamed Jabin' ,
         heading: 'ARTICLE ON HEALTH AND FITNESS' ,
         date: 'Feb 25,2018' ,
         content:
                 `<p>
-                             Generally, a healthy diet consists of taking a proper and healthy food which includes eating green and fresh vegetables, fruits, having milk, eggs, minerals, proteins and vitamins essential for a human’s lifestyle. Practicing Yoga including regular exercises in your daily routine also help you maintain your desired fitness, blood sugar and immunity level.
+                             Generally, a healthy diet consists of taking a proper and healthy food which includes eating green and fresh vegetables, fruits, having milk, eggs, minerals, proteins and vitamins essential for a humans lifestyle. Practicing Yoga including regular exercises in your daily routine also help you maintain your desired fitness, blood sugar and immunity level.
                 </p>
-                `
+                    `
         }
+};
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
